@@ -82,9 +82,13 @@ body {
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
   .container {
-    height: 90vh;
+    height: 80vh;
     width: 500px;
     max-width: 360px;
+  }
+
+  #pantalla {
+    height: 150px;
   }
 
   .container input[type="text"] {
