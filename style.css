@@ -13,9 +13,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 74%, rgba(209, 0, 255, 1) 98%, rgba(145, 5, 184, 1) 100%);
-  padding: 20px 36px;
+  padding: 10px;
 }
 
 .ground {
@@ -29,7 +28,7 @@ body {
 
 #pantalla {
   font-size: 30px;
-  height: 100px;
+  height: 150px;
   background-color: transparent;
   border: none;
   text-align: right;
@@ -38,15 +37,17 @@ body {
 }
 
 .container {
-  height: 80vh;
-  width: 90%;
-  max-width: 400px; /* Establecemos un ancho máximo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 450px;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.804);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  padding: 0;
 }
 
 .container input[type="text"] {
@@ -82,19 +83,30 @@ body {
 }
 
 /* Ajustes específicos para dispositivos móviles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
+
+  body {
+    padding: 20px 25px;
+    background: red;
+  }
+
+  .container {
+    height: 90vh;
+    min-width: 90%;
+  }
+
   #pantalla {
-    font-size: 20px;
-    height: 80px;
+    font-size: 30px;
+    height: 100px;;
   }
 
   .container input[type="text"] {
-    font-size: 14px;
     height: 50px;
   }
 
   .container input[type="button"] {
-    height: 50px;
+    height: 70px;
+    width: 100px;
     font-size: 14px;
-  }
+  } 
 }
