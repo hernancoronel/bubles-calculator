@@ -83,17 +83,19 @@ body {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .container {
-    height: 100vh;
+    height: auto;
     width: 90%;
+    max-width: 360px;
   }
 
   .container input[type="text"] {
-    font-size: 20px;
+    font-size: 16px;
+    height: 60px;
   }
 
   .container input[type="button"] {
-    height: 80px;
-    font-size: 16px;
+    height: 60px;
+    font-size: 14px;
+    margin-top: 10px;
   }
-  
 }
