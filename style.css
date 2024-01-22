@@ -33,14 +33,13 @@ body {
 .container {
   z-index: 12;
   height: 580px;
-  width: 360px;
-  padding: 15px;
+  width: 450px;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.804);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 20px;
+  padding: 10px;
 }
 
 .container input[type="text"] {
@@ -81,10 +80,10 @@ body {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container {
-    height: auto;
-    width: 90%;
+    height: 90vh;
+    width: 500px;
     max-width: 360px;
   }
 
